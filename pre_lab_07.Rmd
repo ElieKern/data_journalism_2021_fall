@@ -965,7 +965,7 @@ We can add that back in by using bind_cols() to reconnect the each_row_df, which
 ### Task 33: Run code to run for loop to add in data
 **Task** Run the following for loop to add in data. Briefly describe the output that appears below the codeblock.
 **Answer** 
-
+There are 19 boxes, each with a 1x10 tibble.  The columns say data_series,backdata, jun_2021, jul_2021, aug_2021, sep_2021, and sector and description.
 
 ```{r}
 
