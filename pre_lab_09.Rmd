@@ -51,7 +51,7 @@ First, we'll create a dataframe of those top 10, called maryland_ppp_top_countie
 ### Task 3: Create a dataframe of top 10 counties for PPP loans in Maryland
 **Task** Run the following code to create a dataframe of top 10 loans by county in Maryland. In the space below, explain what each step of the code below is doing in English.
 **Answer**
-
+The first step us rename a dataset.  Within that dataset, we then look specifically at project county names.  We are then getting more specific, and looking at the number of total loans for each of those counties.  Next, we arrange them in a way that goes from highest to lowest.  Finally, we use the head() function to look at the first 10 parts of the data.
 ```{r}
 maryland_ppp_top_counties <- ppp_maryland %>%
   group_by(project_county_name) %>%
@@ -145,7 +145,7 @@ It's kind of like applying CSS to html. Here I'm changing the theme slightly to 
 ### Task 8: Run the following code
 **Task** Run the following code. Explain what you see after running the code in the space below. What has changed from the last codeblock?
 **Answer**
-The counties have been reordered.  It starts with the highest county in loans, and it continues ascending.  
+The counties have been reordered.  It starts with the highest county in loans, and it continues descending.  
 ```{r}
 maryland_ppp_top_counties %>%
   ggplot() +
